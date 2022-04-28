@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<p>
+  Dear <label id="firstname" ></label>,</p>
+  <p>
+    Thank you for your inquiry. A 4 digit verification number has been sent to your phone number: <label id="phonenumber" ></label>, 
+    please enter in the following box and submit for confirmation: </p>
+    <p>
+    Text box for OTP and 'Validate' button.
+  </p>
+  <br/>
+  <form name='personaldetailsform' onSubmit="return validateOTP();">  
+
+
+    <div> 
+      <label>Enter Otp</label> &nbsp;&nbsp;
+      <input type="text" id="ipOTP" required> 
+
+      <br/>
+
+
+    <div>
+      <input type="submit"  value="Submit" />
+    </div>
+
+
+</form>  
+</body>
+<script src="thanksscript.js"></script>
+</html>
