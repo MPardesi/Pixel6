@@ -4,38 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thank You</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
-
-
-
-<p>
-  Dear <label id="firstname" ></label>,</p>
-  <p>
-    Thank you for your inquiry. A 4 digit verification number has been sent to your phone number: <label id="phonenumber" ></label>, 
-    please enter in the following box and submit for confirmation: </p>
+<body>
+  <div class="outer">
+    <p>Dear <label id="firstname"></label>,</p>
+    <br/>
     <p>
-    Text box for OTP and 'Validate' button.
-  </p>
-  <br/>
-  <form name='personaldetailsform' onSubmit="return validateOTP();">  
-
-
-    <div> 
-      <label>Enter Otp</label> &nbsp;&nbsp;
-      <input type="text" id="ipOTP" required> 
-
-      <br/>
-
-
+      Thank you for your inquiry. 
+    </p> <br/>
     <div>
-      <input type="submit"  value="Submit" />
+      <p>
+        A 4 digit verification number has been sent to your phone number : <label id="phonenumber"></label>
+      </p>
+      <p> Please enter in the following box and submit for confirmation :</p> <br/>
     </div>
 
-
-</form>  
+    <form name='personaldetailsform' onSubmit="return validateOTP();">  
+      <div> 
+        <label>Enter OTP</label> &nbsp;&nbsp;
+        <input type="text" id="ipOTP" required> <br/>
+      </div>
+  
+      <div class="button">
+        <input type="submit"  value="Submit" />
+      </div>
+    </form>  
+    
+    </div>
+    
+  </div>
 </body>
 <script src="thanksscript.js"></script>
 </html>

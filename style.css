@@ -1,51 +1,51 @@
-*{
-    margin: 0;
-  }
-  
-  body,html{
-    height: 100%;
-  }
-  
-  .mainpage{
-    height: 100%;
-    background-color: #f5f5f5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .outer{
-    text-align: center;
-    margin: 50px;
-    background-color:#ffffff;
-    padding: 30px;
-    box-shadow: 19px 27px 72px 4px rgba(156, 145, 145, 0.75);
-    border-radius: 10px;
-    position:relative;
-  }
-  
-  .outer label{
-    color:slateblue;
-    font-weight: bolder;
-    margin-bottom: 15px;
-    font-size: small;
-  }
-  
-  .outer input{
-    margin-bottom: 15px;
-    border: 1px solid blue;
-    padding: 8px;
-    border-radius: 8px;
-  }
-  
-  .outer button{
-    background-color: midnightblue;
-    color: white;
-    border:none;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    padding: 8px;
-  }
- 
+* {
+  margin: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.mainpage {
+  height: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outer {
+  text-align: center;
+  margin: 100px;
+  background-color: #ffffff;
+  padding: 30px;
+  box-shadow: 19px 27px 72px 4px rgba(156, 145, 145, 0.75);
+  border-radius: 10px;
+}
+
+.outer label {
+  color: slateblue;
+  font-weight: bolder;
+  margin-bottom: 15px;
+  font-size:small;
+  font-weight:900;
+}
+
+.outer input {
+  margin-bottom: 15px;
+  border: 1px solid blue;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.outer .button input {
+  background-color: midnightblue;
+  color: white;
+  border: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 8px;
+}
