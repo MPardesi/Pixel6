@@ -21,19 +21,19 @@
       <p> Please enter in the following box and submit for confirmation :</p> <br/>
     </div>
 
-    <form name='personaldetailsform' onSubmit="return validateOTP();">  
+    <form name='thanksform' onSubmit="return validateOTP();" type="GET">  
       <div> 
         <label>Enter OTP</label> &nbsp;&nbsp;
-        <input type="text" id="ipOTP" required> <br/>
+        <input type="text" onkeypress="return onlyNumberKey(event)"   onblur="return validateotplength(event)" id="ipOTP" required> <br/>
+        <br />
+        <span id="errotp" for="ipOTP" display="none"></span>
       </div>
   
       <div class="button">
-        <input type="submit"  value="Submit" />
+        <input type="submit" disabled style="background-color: grey;" id="btnotpsubmit" value="Submit" />
       </div>
     </form>  
-    
-    </div>
-    
+    </div>   
   </div>
 </body>
 <script src="thanksscript.js"></script>

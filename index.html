@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pixel6 Validation</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <form
@@ -19,13 +18,35 @@
         <div class="outer">
           <div>
             <label>Name</label> &nbsp;&nbsp;
-            <input type="text" id="ipfullname" name="fullname" required />
+            <input
+              type="text"
+              id="ipfullname"
+              name="fullname"
+              required
+              onkeyup="return validatefullname(event)"
+              onblur="enablesubmitbutton()"
+            />
+            <br />
+            <span id="errfullname" for="ipfullname"  display="none"></span>
             <br />
           </div>
           <!-- onfocusout="validatefullname()" -->
           <div>
             <label>Email</label> &nbsp;&nbsp;
-            <input id="ipemail" name="email" type="email" required /> <br />
+            <input
+              id="ipemail"
+              name="email"
+              type="email"
+              required
+              onkeyup="return emailvalidate(event);"
+              onblur="enablesubmitbutton()"
+    
+            />
+            <br />
+            <!-- <input id="ipemail" name="email" type="email" onfocusout="return emailvalidate();" onfocusout="enablesubmitbutton();"/ required /> <br /> -->
+
+            <span id="erremail" for="ipemail" display="none"></span>
+            <br />
           </div>
 
           <div>
@@ -33,20 +54,29 @@
             <input
               id="ipphone"
               name="phone"
-              type="tel"
               onkeyup="return validatephonenumber(event)"
+              onkeypress="return onlyNumberKey(event)"
+              onblur="enablesubmitbutton()"
               required
-              maxlength="10"
+              maxlength="18"
             />
+
+            <br />
+            <span id="errphone" for="ipphone"></span>
             <p id="phoneprovider"></p>
             <br />
           </div>
 
           <div class="button">
-            <input type="submit" value="Submit" />
+            <input type="submit" id="btnsubmit" disabled value="Submit" />
+            <!-- <input type="submit" id="btnsubmit" disabled value="Submit" /> -->
           </div>
         </div>
       </div>
     </form>
   </body>
+  <script src="script.js"></script>
+  <script src="namevalidator.js"></script>
+  <script src="phonevalidator.js"></script>
+  <script src="emailvalidator.js"></script>
 </html>

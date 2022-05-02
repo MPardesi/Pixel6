@@ -48,4 +48,5 @@ html {
   justify-content: center;
   border-radius: 8px;
   padding: 8px;
+  cursor: pointer;
 }
